@@ -1,12 +1,17 @@
 
 # Una chica que habla de perfumes
 
-En este proyecto trabajé:
-- index.html
-- familias.htlm : grids
-- tipos.html : flex
+¿Qué vamos a encontrar en la entrega 03?
+- index.html (🎀 Perfume Mood) -> se agregó una navbar y se quitó el carrusel.
+- familias.htlm (📖 Notas que cuentan cosas).
+- primavera_verano.html (☀️ Verano en frasquito) -> se sumaron cards animadas. Falta información en la pagina por agregar.
+- primavera_verano.html (🍁 Aromas abrigaditos) -> se sumaron cards animadas. Falta información en la pagina por agregar.
+- tipos.htlm (🧴 Entre frascos).
 
-Las demás paginas estan en construcción.
+¿Dondé hay media queries?
+- Están en index.html, familias.htlm, primavera_verano.htlm y otoño_invierno.html
 
-El carrusel de index es creado por chatgpt, bootstrap no me sirvió y espero tener más herramientas más adelante para modificarlo.
+¿Y SASS? Lo estamos trabajando :)
+
+
 

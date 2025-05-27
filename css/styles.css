@@ -706,8 +706,24 @@ footer{
         font-size: 0.8rem;
     }
 
-    .perfumen_card{
+    .recomendacion{
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .flip-card {
+        background-color: transparent;
+        width: 8rem;
+        height: 10rem;
+        perspective: 1000px;
+    }
+
+    .text_perfume {
+        font-size: 0.95em;
+    }
+
+    .info_extra{
+    padding: .3125rem;
+    font-size: 0.65em;
     }
 
     footer {
