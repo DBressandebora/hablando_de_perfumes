@@ -1,0 +1,19 @@
+{
+  "name": "aromas_lindos",
+  "version": "1.0.0",
+  "description": "¿Qué vamos a encontrar en la entrega 03? - index.html (🎀 Perfume Mood) -> se agregó una navbar y se quitó el carrusel. - familias.htlm (📖 Notas que cuentan cosas). - primavera_verano.html (☀️ Verano en frasquito) -> se sumaron cards animadas. Falta información en la pagina por agregar. - primavera_verano.html (🍁 Aromas abrigaditos) -> se sumaron cards animadas. Falta información en la pagina por agregar. - tipos.htlm (🧴 Entre frascos).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DBressandebora/hablando_de_perfumes.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DBressandebora/hablando_de_perfumes/issues"
+  },
+  "homepage": "https://github.com/DBressandebora/hablando_de_perfumes#readme"
+}

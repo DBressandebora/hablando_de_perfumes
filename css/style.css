@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Playwrite+CU:wght@100..400&family=Questrial&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  font-family: "Homemade Apple" cursive;
+  margin-top: 2rem;
+}
+
+/*# sourceMappingURL=style.css.map */
