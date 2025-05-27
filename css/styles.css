@@ -39,7 +39,7 @@
     padding: 30px;
 }
 
-.hover_index:hover{ /*:hover → se aplica cuando pasás el mouse encima del elemento.*/
+.hover_index:hover{
     filter: drop-shadow(0 0 10px #F0A8D0);
     /*(horizontal:derecha izquierda / vertical: arriba abajo / radio de la sombra / colorcito)*/
     transition: 0.3s ease; /* Para que el efecto sea suave */
@@ -180,11 +180,11 @@
 }
 
 .bg-spring{
-    background-image: url(../assets/imagen/nav_02.webp);
+    background-image: url(../assets/imagen/idea-01.webp);
     background-position: center center;
     background-size: cover;
     width: 100%;
-    height: 40vh;
+    height: 50vh;
 }
 
 .bg-fall{
@@ -227,6 +227,7 @@
 .intro p{
     font-family: "Questrial", sans-serif;
     padding-top: 1rem;
+    padding-bottom: 1rem;
     line-height: 1.4;
     margin: 0 2rem;
 }
@@ -270,14 +271,11 @@
     color: #FADA7A;
 }
 
-.family{
+.prin_card{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-self: stretch;
-    gap: 32px;
 }
 
-.family article{
+.prin_card article{
     display: flex;
     flex-direction: column;
     align-items: stretch;
@@ -288,6 +286,12 @@
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
+}
+
+.family_card{
+    grid-template-columns: repeat(2, 1fr);
+    align-self: stretch;
+    gap: 32px;
 }
 
 .esp1{
@@ -372,12 +376,14 @@
 }
 
 .t-info img{
-    width: 400px;
+    width: 100%;
+    max-width: 700px;
     height: auto;
     margin: 2rem;
     border-radius: 1rem;
     object-fit: contain;
     align-self: center;
+    display: block;
 }
 
 .t-flex{
@@ -395,19 +401,19 @@
     display: flex;
     flex-direction: column;
     padding: 1.5rem;
-    gap: 0.75rem;
+    gap: 0.55rem;
 }
 
 .info-esp ul{
     list-style: none;
     font-family: "Questrial", sans-serif;
-    padding-left: 1rem;
+    padding-left: 0.5rem;
     margin-top: 0.5rem;
 }
 
 .info-esp li{
-    line-height: 1.4;
-    margin-bottom: 0.5rem;
+    line-height: 1;
+    margin-bottom: 0.4rem;
 }
 
 .intro video{
@@ -416,6 +422,90 @@
     max-width: 70%;
     border-radius: 1rem;
     box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+.perfume{
+    padding: 0.5rem 3.5rem;
+}
+
+.recomendacion{
+    grid-template-columns: repeat(4, 1fr);
+    align-self: stretch;
+    gap: 32px;
+    padding: 1rem 0%;
+    justify-self: center;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 12rem;
+  height: 15rem;
+  perspective: 1000px;
+  font-family: "Questrial", sans-serif;
+}
+
+.flip-card a{
+    text-decoration: none;
+    color: #EF476F;
+}
+
+.btn-neon:hover{
+    color: #fff;
+    text-shadow:
+        0 0 5px #EF476F,
+        0 0 10px #EF476F,
+        0 0 20px #EF476F,
+        0 0 40px #EF476F;
+}
+
+.text_perfume {
+  font-size: 1.2em;
+  font-weight: 900;
+  text-align: center;
+  margin: 0;
+}
+
+.info_extra{
+  padding: .625rem;
+  font-size: 0.8em;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  box-shadow: 0 8px 14px 0 rgba(0,0,0,0.2);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border: 1px solid #ffe5dc;
+  border-radius: 1.5rem;
+}
+
+.flip-card-front {
+  background-color: #FEEBD6;
+  color: #4b4737;
+}
+
+.flip-card-back {
+  background-image: linear-gradient(to top, #ffd9d1, #ffddd1, #ffe2d2, #ffe6d4, #feebd6);
+  color: #5d594f;
+  transform: rotateY(180deg);
 }
 
 footer{
@@ -437,7 +527,7 @@ footer{
         font-size: 0.85rem;
     }
 
-    .family{
+    .family_card{
         grid-template-columns: 1fr;
     }
 
@@ -502,7 +592,7 @@ footer{
         text-align: left;
     }
 
-    .family{
+    .family_card{
         grid-template-columns: 1fr;
     }
 
@@ -608,12 +698,16 @@ footer{
         padding: 0.5rem;
     }
 
-    .family{
+    .family_card{
         grid-template-columns: 1fr;
     }
 
     .card ul{
         font-size: 0.8rem;
+    }
+
+    .perfumen_card{
+        grid-template-columns: repeat(2, 1fr);
     }
 
     footer {
