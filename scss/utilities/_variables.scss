@@ -1,19 +1,21 @@
 // 🎨 Colores
 $paletita:(
-    soft_pink: #F0A8D0,
+    principal: #F0A8D0,
+    general: #424242,
+    navbar: whitesmoke,
     light_pink: #F7CFD8, 
-    light_peach: #FFD09B, 
     light_yellow: #FFE6A9, 
     light_blue: #C5D3E8
 );
 
+$shadow: #EF476F;
 
 // 🔤 Tipografías
 @import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Playwrite+CU:wght@100..400&family=Questrial&display=swap');
 
-$fonts:(
-    handwritte: "Homemade Apple" cursive,
-    navbar: "Josefin Sans" sans-serif,
-    titles: "Playwrite CU" cursive,
-    main: "Questrial" sans-serif,
+$fonts: (
+    handwrite: "Homemade Apple",
+    navbar: "Josefin Sans",
+    titles: "Playwrite CU",
+    main: "Questrial"
 );

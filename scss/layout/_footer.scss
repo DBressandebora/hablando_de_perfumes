@@ -1,6 +1,17 @@
 footer{
     display: flex;
     justify-content: center;
-    font-family: map-get($fonts,"handwritte");
-    margin-top: 2rem
-};
+    font-family: map-get($fonts, handwrite);
+    color: map-get($paletita, principal);
+    margin-top: 2rem;
+
+    @media(max-width: 768px){
+        font-size: 0.75rem;
+        text-align: center;
+    }
+
+    @media(max-width: 320px){
+        font-size: 0.75rem;
+        text-align: center;
+    }
+}

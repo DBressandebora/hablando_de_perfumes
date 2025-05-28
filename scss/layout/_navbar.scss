@@ -1,0 +1,27 @@
+.navbar{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    padding: 30px;
+
+    ul{
+        @include flex(row,nowrap,center,center,4rem);
+    }
+
+    li a{
+        font-family: map-get($fonts,navbar);
+        font-size: 1rem;
+        color: map-get($paletita, navbar);
+        text-shadow: 1px 1px 2px $shadow;
+    }
+}
+
+.icono{
+    grid-column: 1;
+}
+
+.icono:hover{
+    filter: drop-shadow(0 0 10px map-get($paletita,light_pink));
+    transition: 0.3s ease; 
+}
+

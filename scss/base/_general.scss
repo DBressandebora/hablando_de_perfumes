@@ -11,3 +11,8 @@ ul,ol{
 a{
     text-decoration: none;
 }
+
+body{
+    font-family: map-get($fonts, main);
+    color: map-get($paletita , general);
+}
