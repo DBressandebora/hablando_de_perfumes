@@ -1,4 +1,14 @@
-// 🎨 Colores
+// Portadas
+$portada: (
+    index: url("../assets/imagen/index.webp"),
+    familia: url("../assets/imagen/nav_01.webp"),
+    privamera: url("../assets/imagen/nav_02.webp"),
+    otoño: url("../assets/imagen/nav_03.webp"),
+    tipos: url("../assets/imagen/nav_04.webp"),
+    tips: url("../assets/imagen/nav_05.webp")
+);
+
+// Colores
 $paletita:(
     principal: #F0A8D0,
     general: #424242,
@@ -10,7 +20,7 @@ $paletita:(
 
 $shadow: #EF476F;
 
-// 🔤 Tipografías
+// Tipografías
 @import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Playwrite+CU:wght@100..400&family=Questrial&display=swap');
 
 $fonts: (

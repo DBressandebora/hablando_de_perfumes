@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Playwrite+CU:wght@100..400&family=Questrial&display=swap");
 * {
   margin: 0;
@@ -18,24 +19,48 @@ body {
   color: #424242;
 }
 
-.portada {
-  background-image: url("../assets/imagen/index.webp");
+main {
+  padding: 1.875rem;
+}
+
+img, video {
+  border-radius: 2rem;
+}
+
+.tips, .tipos, .otoño, .primavera, .family, .index {
   background-position: center center;
   background-size: cover;
   width: 100%;
+}
+
+.index {
+  background-image: url("../assets/imagen/index.webp");
   height: 100vh;
 }
-@media (max-width: 768px) {
-  .portada {
-    background-position: center;
-    height: 70vh;
-  }
+
+.family {
+  background-image: url("../assets/imagen/nav_01.webp");
+  height: 40vh;
 }
-@media (max-width: 320px) {
-  .portada {
-    background-position: right;
-    height: 100vh;
-  }
+
+.primavera {
+  background-image: url("../assets/imagen/nav_02.webp");
+  height: 40vh;
+}
+
+.otoño {
+  background-image: url("../assets/imagen/nav_03.webp");
+  height: 40vh;
+}
+
+.tipos {
+  background-image: url("../assets/imagen/nav_04.webp");
+  height: 40vh;
+}
+
+.tips {
+  background-image: url("../assets/imagen/nav_05.webp");
+  height: 40vh;
 }
 
 .navbar {
@@ -86,6 +111,46 @@ footer {
     font-size: 0.75rem;
     text-align: center;
   }
+}
+
+.title-portada {
+  padding-left: 50px;
+  color: whitesmoke;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+}
+.title-portada h1 {
+  padding-top: 90px;
+  font-family: "Homemade Apple";
+  font-size: 3.5rem;
+  line-height: 1.2;
+}
+.title-portada p {
+  padding-top: 25px;
+  font-family: "Questrial";
+  font-size: 1.125rem;
+  font-style: italic;
+}
+
+.intro {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  margin: 1.25rem;
+}
+.intro div p {
+  line-height: 1.5;
+  padding-bottom: 1.25rem;
+}
+
+.familia {
+  background-image: url("../assets/imagen/nav_01.webp");
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+  height: 50vh;
 }
 
 /*# sourceMappingURL=style.css.map */

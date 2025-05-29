@@ -1,0 +1,28 @@
+.title-portada{
+    h1{
+        padding-top: 90px;
+        font-family: map-get($fonts, handwrite);
+        font-size: 3.5rem;
+        line-height: 1.2;
+    }
+    p{
+        padding-top: 25px;
+        font-family: map-get($fonts, main);
+        font-size: 1.125rem;
+        font-style: italic
+    }
+    padding-left: 50px;
+    color: map-get($paletita, navbar);
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.4)
+}
+
+.intro{
+    @include flex(row,wrap,space-between,center,2rem);
+    margin: 1.25rem;
+    div{
+        p{
+            line-height: 1.5;
+            padding-bottom: 1.25rem;
+        }
+    }
+}

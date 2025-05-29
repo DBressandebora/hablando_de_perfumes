@@ -16,3 +16,11 @@ body{
     font-family: map-get($fonts, main);
     color: map-get($paletita , general);
 }
+
+main{
+    padding: 1.875rem;
+}
+
+img, video{
+    border-radius: 2rem;
+}

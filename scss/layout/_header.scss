@@ -1,17 +1,41 @@
-.portada{
-    background-image: url("../assets/imagen/index.webp");
+%base-portada{
     background-position: center center;
     background-size: cover;
-    width: 100%;
-    height: 100vh;
+    width: 100%,
+}
 
-    @media(max-width: 768px){
-        background-position: center;
-        height: 70vh;
-    }
+.index{
+    @extend %base-portada;
+    background-image: map-get($portada, index);
+    height: 100vh,
+}
 
-    @media(max-width: 320px){
-        background-position: right;
-        height: 100vh;
-    }
+.family{
+    @extend %base-portada;
+    background-image: map-get($portada, familia);
+    height: 40vh,
+}
+
+.primavera{
+    @extend %base-portada;
+    background-image: map-get($portada, privamera);
+    height: 40vh,
+}
+
+.otoño{
+    @extend %base-portada;
+    background-image: map-get($portada, otoño);
+    height: 40vh
+}
+
+.tipos{
+    @extend %base-portada;
+    background-image: map-get($portada, tipos);
+    height: 40vh
+}
+
+.tips{
+    @extend %base-portada;
+    background-image: map-get($portada, tips);
+    height: 40vh
 }
