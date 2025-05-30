@@ -6,7 +6,7 @@
   box-sizing: border-box;
 }
 
-ul, ol {
+ul, ol, li {
   list-style: none;
 }
 
@@ -16,7 +16,7 @@ a {
 
 body {
   font-family: "Questrial";
-  color: #424242;
+  color: #474747;
 }
 
 main {
@@ -25,6 +25,11 @@ main {
 
 img, video {
   border-radius: 2rem;
+}
+
+h2, h3, h4, h5 {
+  font-family: "Playwrite CU", cursive;
+  padding: 1rem, 0;
 }
 
 .tips, .tipos, .otoño, .primavera, .family, .index {
@@ -67,7 +72,7 @@ img, video {
   display: grid;
   grid-template-columns: auto 1fr;
   align-items: center;
-  padding: 30px;
+  padding: 80px 40px;
 }
 .navbar ul {
   display: flex;
@@ -80,16 +85,18 @@ img, video {
 .navbar li a {
   font-family: "Josefin Sans";
   font-size: 1rem;
-  color: whitesmoke;
-  text-shadow: 1px 1px 2px #EF476F;
+  font-weight: bold;
+  color: #F4F4F9;
+  text-shadow: 1px 1px 2px #E50046;
 }
 
 .icono {
   grid-column: 1;
+  padding-left: 3rem;
 }
 
 .icono:hover {
-  filter: drop-shadow(0 0 10px #F7CFD8);
+  filter: drop-shadow(0 0 10px);
   transition: 0.3s ease;
 }
 
@@ -97,25 +104,13 @@ footer {
   display: flex;
   justify-content: center;
   font-family: "Homemade Apple";
-  color: #F0A8D0;
+  color: #FF7AA2;
   margin-top: 2rem;
-}
-@media (max-width: 768px) {
-  footer {
-    font-size: 0.75rem;
-    text-align: center;
-  }
-}
-@media (max-width: 320px) {
-  footer {
-    font-size: 0.75rem;
-    text-align: center;
-  }
 }
 
 .title-portada {
   padding-left: 50px;
-  color: whitesmoke;
+  color: #F4F4F9;
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
 }
 .title-portada h1 {
@@ -145,12 +140,246 @@ footer {
   padding-bottom: 1.25rem;
 }
 
-.familia {
-  background-image: url("../assets/imagen/nav_01.webp");
-  background-position: center center;
-  background-size: cover;
+.notes-box {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: none;
+  gap: none;
+  align-items: center;
+  padding: 3rem;
+  margin: 2rem;
+  border-radius: 3rem;
+  background-color: #fffbc1;
+  box-shadow: 0 10px 20px rgba(240, 168, 208, 0.2);
+}
+.notes-box article {
+  line-height: 2rem;
+}
+.notes-box article h3 {
+  padding: 1.5rem 0 0.5rem 0;
+}
+.notes-box article p {
+  padding: 0 2rem 1rem 3rem;
+}
+
+.imp {
+  color: #E97777;
+  text-shadow: 1px 1px 4px rgba(240, 168, 208, 0.2);
+}
+
+.familist {
   width: 100%;
-  height: 50vh;
+}
+.familist ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: none;
+  gap: 2rem;
+  margin: 1rem;
+  justify-items: center;
+}
+.familist ul li a {
+  font-family: "Josefin Sans";
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #FBBA72;
+}
+.familist ul li a:hover {
+  color: #E50046;
+}
+
+.family_card {
+  padding-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: none;
+  gap: 2.5rem;
+}
+
+.especial_7, .especial_6, .especial_5, .especial_4, .especial_3, .especial_2, .especial_1 {
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 5px 10px #C1BAA1;
+  justify-content: center;
+  height: 100%;
+}
+
+.especial_1 {
+  background: linear-gradient(180deg, #FFF3B0, white);
+}
+
+.especial_2 {
+  background: linear-gradient(180deg, #FFD1DC, white);
+}
+
+.especial_3 {
+  background: linear-gradient(180deg, #C8B8A5, white);
+}
+
+.especial_4 {
+  background: linear-gradient(180deg, #C7EFCF, white);
+}
+
+.especial_5 {
+  background: linear-gradient(180deg, #B3C2BF, white);
+}
+
+.especial_6 {
+  background: linear-gradient(180deg, #F7C59F, white);
+}
+
+.especial_7 {
+  background: linear-gradient(180deg, #FBC8D9, white);
+}
+
+.title {
+  padding-top: 2rem;
+}
+
+.perfumito {
+  padding: 1.5rem 5rem;
+}
+.perfumito h3 {
+  padding-bottom: 1rem;
+}
+
+.recomendacion {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: none;
+  gap: 2rem;
+  align-self: stretch;
+  padding: 1rem 0%;
+  justify-self: center;
+  padding-bottom: 2rem;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 12rem;
+  height: 15rem;
+  perspective: 1000px;
+  font-family: "Questrial", sans-serif;
+}
+.flip-card a {
+  color: #E50046;
+}
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.btn-neon:hover {
+  color: #fff;
+  text-shadow: 0 0 5px #E50046, 0 0 10px #E50046, 0 0 20px #E50046, 0 0 40px #E50046;
+}
+
+.text_perfume {
+  font-family: "Playwrite CU";
+  font-size: 1.2em;
+  font-weight: 900;
+  text-align: center;
+  margin: 0.5rem;
+}
+
+.branding {
+  margin: 0.8rem;
+}
+
+.info_extra {
+  padding: 0.625rem;
+  font-size: 0.8em;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.2);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border: 1px solid #ffe5dc;
+  border-radius: 1.5rem;
+}
+
+.flip-card-front {
+  background: radial-gradient(circle, rgb(255, 252, 235) 6%, rgb(255, 226, 207) 92%);
+  color: #4b4737;
+}
+
+.flip-card-back {
+  background: radial-gradient(circle, rgb(255, 252, 235) 6%, rgb(255, 226, 207) 92%);
+  transform: rotateY(180deg);
+}
+
+.intro div {
+  padding: 0 4rem;
+}
+.intro div ul {
+  padding: 1rem 0;
+}
+.intro div ul ol {
+  padding-bottom: 1rem;
+}
+.intro div ul ol a {
+  color: #FF7AA2;
+}
+
+.types-box {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: none;
+  gap: none;
+  align-items: center;
+  padding: 3rem;
+  margin: 2rem;
+  border-radius: 3rem;
+  padding-top: 0;
+}
+.types-box img {
+  height: 90%;
+  margin-right: 2rem;
+}
+.types-box div {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.types-box div div {
+  padding: 1rem;
+  gap: 0.55rem;
+}
+.types-box div div h4 {
+  color: #FF7AA2;
+}
+.types-box div div ul {
+  padding: 0 0.75rem;
+  margin-top: 0.2rem;
+}
+.types-box div div ul li {
+  line-height: 1.05;
+  margin-bottom: 0.4rem;
+}
+
+.intro video {
+  max-width: 70%;
+  display: block;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=style.css.map */

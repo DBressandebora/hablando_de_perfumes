@@ -13,7 +13,7 @@
 .family{
     @extend %base-portada;
     background-image: map-get($portada, familia);
-    height: 40vh,
+    height: 40vh;
 }
 
 .primavera{

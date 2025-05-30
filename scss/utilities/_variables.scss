@@ -10,15 +10,13 @@ $portada: (
 
 // Colores
 $paletita:(
-    principal: #F0A8D0,
-    general: #424242,
-    navbar: whitesmoke,
-    light_pink: #F7CFD8, 
-    light_yellow: #FFE6A9, 
-    light_blue: #C5D3E8
+    principal: #FF7AA2,
+    general: #474747,
+    navbar: #F4F4F9,
+    light_yellow: #fffbc1
 );
 
-$shadow: #EF476F;
+$shadow: #E50046;
 
 // Tipografías
 @import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Playwrite+CU:wght@100..400&family=Questrial&display=swap');

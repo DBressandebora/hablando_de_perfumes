@@ -1,0 +1,74 @@
+.flip-card {
+    background-color: transparent;
+    width: 12rem;
+    height: 15rem;
+    perspective: 1000px;
+    font-family: "Questrial", sans-serif;
+
+    a {
+        color: $shadow;
+    }
+
+    &:hover .flip-card-inner {
+        transform: rotateY(180deg);
+    }
+}
+
+.btn-neon:hover {
+    color: #fff;
+    text-shadow: 0 0 5px $shadow, 0 0 10px $shadow, 0 0 20px $shadow, 0 0 40px $shadow;
+}
+
+.text_perfume {
+    font-family: map-get($fonts,titles);
+    font-size: 1.2em;
+    font-weight: 900;
+    text-align: center;
+    margin: 0.5rem;
+}
+
+.branding{
+    margin: 0.8rem;
+}
+
+.info_extra{
+    padding: .625rem;
+    font-size: 0.8em;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    box-shadow: 0 8px 14px 0 rgba(0,0,0,0.2);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border: 1px solid #ffe5dc;
+    border-radius: 1.5rem;
+}
+
+.flip-card-front {
+    background: radial-gradient(circle,rgba(255, 252, 235, 1) 6%, rgba(255, 226, 207, 1) 92%);
+    color: #4b4737;
+}
+
+.flip-card-back {
+    background: radial-gradient(circle,rgba(255, 252, 235, 1) 6%, rgba(255, 226, 207, 1) 92%);
+    transform: rotateY(180deg);
+}

@@ -1,0 +1,13 @@
+.perfumito{
+    padding: 1.5rem 5rem;
+    h3{
+        padding-bottom: 1rem;
+    }
+}
+
+.recomendacion{
+    @include cardperf;
+    padding-bottom: 2rem;
+}
+
+@import "../components/card";

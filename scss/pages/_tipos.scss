@@ -1,0 +1,51 @@
+.intro{
+    div{
+        padding: 0 4rem;
+        ul{
+            padding: 1rem 0;
+            ol{
+                padding-bottom: 1rem;
+                a{
+                    color: map-get($paletita, principal);
+                }
+            }
+        }
+    }
+}
+
+.types-box{
+    @include box;
+    padding-top: 0;
+    img{
+        height: 90%;
+        margin-right: 2rem;
+    }
+    div{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        div{
+            padding: 1rem;
+            gap: 0.55rem;
+            h4{
+                color: map-get($paletita, principal)
+            }
+            ul{
+                padding: 0 0.75rem;
+                margin-top: 0.2rem;
+                li{
+                    line-height: 1.05;
+                    margin-bottom: 0.4rem;
+                }
+            }
+        }
+    }
+}
+
+.intro{
+    video{
+        max-width: 70%;
+        display: block;
+        margin: 0 auto;
+    }
+}

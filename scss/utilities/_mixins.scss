@@ -14,3 +14,17 @@
     gap: $gap;
 }
 
+@mixin box{
+    @include grid(1fr auto,none,none);
+    align-items: center;
+    padding: 3rem;
+    margin: 2rem;
+    border-radius: 3rem;
+}
+
+@mixin cardperf{
+    @include grid(repeat(4,1fr),none,2rem);
+    align-self: stretch;
+    padding: 1rem 0%;
+    justify-self: center;
+}
