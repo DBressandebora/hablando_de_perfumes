@@ -1,0 +1,329 @@
+/*Queridos y hermosos media ♥*/
+@media (max-width: 768px){
+    .navbar{
+        display: flex;
+        flex-direction: row;
+        padding: 75px 30px;
+        justify-content: center;
+        ul{
+            @include flex(row,nowrap,center,center,1rem);
+
+            li a{
+                font-size: 0.7rem;
+            }
+        }
+    }
+
+    .icono{
+        padding-left: 0;
+        padding-right: 1rem;
+        width: 80%;
+        height: auto;
+    }
+
+    .title-portada{
+        h1{
+            padding-top: 80px;
+            font-size: 3rem;
+        }
+        p{
+            font-size: 1rem;
+            padding-top: 0.9rem;
+        }
+    }
+
+    .intro{
+        @include flex(column,nowrap,space-between,center,none);
+        margin: 0.5rem;
+        div{
+            padding: 0;
+        }
+        p{
+            font-size: 0.85rem;
+            line-height: 1.5;
+            align-self: stretch;
+        }
+        h2{
+            align-self: stretch;
+            padding-top: 1rem;
+            padding-bottom: 0;
+        }
+    }
+
+    video, img{
+        order: -1;
+        width: 70%;
+        max-width: 400px;
+        justify-self: center;
+    }
+
+    h2{
+        font-size: 1.4rem;
+    }
+
+    h3, h4{
+        font-size: 1rem;
+    }
+
+    .notes-box{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 1.2rem;
+        margin: 0.2rem;
+        
+        article{
+            p{
+                padding: 0.2rem 0.5rem;
+            }
+        }
+    }
+
+    .familist{
+        ul{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    .family_card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        article{
+            div{
+                padding: 0.8rem;
+                ul{
+                    font-size: 0.85rem;
+                }
+            }
+        }
+    }
+
+    .perfumito{
+        padding: 1rem 1.6rem;
+        h3{
+            padding-bottom: 1rem;
+        }
+    }
+
+    .recomendacion{
+        grid-template-columns: repeat(2, 1fr);
+        padding: 1rem;
+    }
+
+    .types-box{
+        @include flex(column,nowrap,center,center,none);
+        padding: 0.8rem;
+        img{
+            width: 500px;
+            height: auto;
+            margin: 0;
+        }
+        div{
+            div{
+                padding: 0;
+                p{
+                    font-size: 0.85rem;
+                }
+                ul{
+                    font-size: 0.85rem;
+                }
+            }
+        }
+    }
+
+    .intro{
+        video{
+            max-width: 90%;
+            display:flex;
+            padding: 2rem 0;
+        }
+    }
+
+    footer {
+        font-size: 0.9rem;
+        text-align: center;
+    }
+};
+
+@media (max-width: 320px){
+    .index{
+        background-position: right;
+        height: 100vh;
+    }
+
+    %media-portada{
+        background-position: center center;
+        height: 60vh;
+    }
+
+    .family, .primavera, .otoño, .tipos, .tips{
+        @extend %media-portada;
+    }
+
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        padding: 40px 20px;
+
+        ul{
+            @include flex(column,wrap,center,center,1rem);
+
+            li a{
+                font-size: 0.75rem;
+            }
+        }
+    }
+
+    .icono{
+    padding: 0;
+    }
+
+    .title-portada{
+        h1{
+            padding-top: 40px;
+            font-size: 2rem;
+        }
+        p{
+            font-size: 0.95rem;
+            padding-top: 0.6rem;
+        }
+    }
+
+    .intro{
+        @include flex(column,nowrap,space-between,center,none);
+        margin: 0.5rem;
+        div{
+            padding: 0;
+        }
+        p{
+            font-size: 0.85rem;
+            padding-top: 0.5rem;
+            line-height: 1.5;
+        }
+    }
+
+    video, img{
+        order: -1;
+        width: 100%;
+        max-width: 400px;
+    }
+
+    %title-padding{
+        padding: 1rem 0 0.2rem;
+    }
+
+    h2{
+        @extend %title-padding;
+        font-size: 1.2rem;
+    }
+
+    h3, h4{
+        @extend %title-padding;
+        font-size: 0.9rem;
+    }
+
+    .notes-box{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 1.2rem;
+        margin: 0.2rem;
+        
+        article{
+            p{
+                padding: 0.2rem 0.5rem;
+            }
+        }
+    }
+
+    .familist{
+        ul{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    .family_card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        article{
+            div{
+                padding: 0.8rem;
+                ul{
+                    font-size: 0.85rem;
+                }
+            }
+        }
+    }
+
+    .perfumito{
+        padding: 0.5rem 1.2rem;
+        h3{
+            padding-bottom: 0.75rem;
+        }
+    }
+
+    .recomendacion{
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0.5rem;
+    }
+
+    .flip-card{
+        width: 7rem;
+        height: 12rem;
+        perspective: 1000px;
+    }
+
+    .text_perfume{
+        font-size: 0.9rem;
+        font-weight: 900;
+    }
+
+    .branding, .info_extra{
+        font-size: 0.75em;
+    }
+
+    .flip-card-back{
+        p a{
+            font-size: 0.65em;
+        }
+    }
+
+    .types-box{
+        @include flex(column,nowrap,center,center,none);
+        padding: 0.2rem;
+        img{
+            width: 260px;
+            height: auto;
+            margin: 0;
+        }
+        div{
+            div{
+                padding: 0;
+                p{
+                    font-size: 0.85rem;
+                }
+                ul{
+                    font-size: 0.85rem;
+                }
+            }
+        }
+    }
+    
+    .intro{
+        video{
+            max-width: 100%;
+            display:flex;
+            padding: 1rem 0;
+        }
+    }
+
+    footer {
+        font-size: 0.75rem;
+        text-align: center;
+        padding: 0 15px;
+    }
+    }
